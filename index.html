@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<title>Justin Hartman</title>
+	
+	 <link href="css/style.css" rel="stylesheet">
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src=http://bigspotteddog.github.io/ScrollToFixed/jquery-scrolltofixed-min.js></script>
+
+<script>
+	$(document).on('click', 'a', function(event){
+
+	    $('html, body').animate({
+	        scrollTop: $( $.attr(this, 'href') ).offset().top
+	    }, 1000);
+	    return false;
+	});
+</script>
+
+<script>
+	$(document).ready(function() {
+    $('.menu').scrollToFixed({marginTop: 30});
+	});
+</script>
+
+<body> 
+	<header>
+			<div class="title">Justin Hartman</div>
+
+			<div class="menu">
+			     <ul id = "nav">
+			         <li><a href="#about">About</a></li>
+			         <li><a href="#portfolio">Portfolio</a></li>
+			         <li><a href="#contact">Contact</a></li>
+			     </ul>
+			</div>
+	</header>
+	<div id="page1">
+	  <a id="about" class="smooth"></a>
+	    I'm a freshman at Purdue University majoring in Computer Science. I enjoy everything soccer, playing guitar, and being mediocre at video games.
+	</div>
+	 
+	<div id="page2">
+	  <a id="portfolio" class="smooth"></a>
+	    Founder of Big Seat Studios and lead programmer of the game Chicken Hero.
+	    <a href="http://www.bigseatstudios.com/" target="_blank"> 
+	    <img src="images/ChickenPhil1.gif" alt="Chicken Hero" style="width:480px; height:480px;">
+	    </a>
+	    <br>
+	    Currently working on an iOS app that collects data from streaming services to help people choose what to watch and where.
+	</div>
+	 
+	<div id="page3">
+	  <a id="contact" class="smooth"></a>
+	    Contact me at: <br>
+	    justindhartman@outlook.com
+	</div>
+</body>
+</html>

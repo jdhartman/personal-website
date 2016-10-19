@@ -1,0 +1,104 @@
+
+@font-face
+{
+font-family: AvenirHand;
+src: url('AvenirHand.ttf'),
+url('AvenirHand.eot'),
+url('AvenirHand.woff');
+
+}
+*{
+	font-family: AvenirHand, Times;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+.title{
+	height: 300px;
+	width: 100%;
+	text-align: center;
+	font-size: 8.5rem;
+	color: white;
+	padding-top: 15%;
+	padding-left: 0px;
+	margin: 0;
+}
+li {
+	display: inline;
+	width: 100%;
+	text-align: center;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+
+}
+li a {
+	
+}
+ul {
+	display: inline;
+	list-style-type: none;
+	top: 0px;
+}
+.menu {
+	padding-right: 30px;
+	margin: 0;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	top: 0px;
+	font-size: 2.5rem;
+	overflow: auto;
+}
+
+#page1 {
+	height: 1000px;
+	margin-left: auto;
+	margin-right: auto; 
+	width: 60%;
+	text-align: center;
+	padding-top: 15%;
+	color: white;
+	font-size: 3rem;
+}
+#page2 {
+	height: 1000px;
+	margin-left: auto;
+	margin-right: auto; 
+	width: 60%;
+	text-align: center;
+	padding-top: 15%;
+	color: white;
+	font-size: 3rem;
+}
+#page3 {
+	height: 1000px;
+	margin-left: auto;
+	margin-right: auto; 
+	width: 60%;
+	text-align: center;
+	padding-top: 45%;
+	color: white;
+	font-size: 3rem;
+}
+form {
+	align: center;
+	padding: 5px;
+	margin: auto;
+	display: inline-block;
+}
+form input {
+	font-size: 3.5rem;	
+	border: none;
+	background: transparent;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	color: white;
+}
+body{
+	height: 4500px;
+	background: -webkit-linear-gradient(#59B2AB, #FF681F);
+}
+		
+
+
