@@ -22,7 +22,20 @@
 
 <script>
 	$(document).ready(function() {
-    $('.menu').scrollToFixed({marginTop: 30});
+    $('.menu').scrollToFixed({
+    	marginTop: 30,
+    	preFixed: function() { 
+			    $("li").css("opacity", .1);
+
+			    $("li").hover(function() {
+			        $(this).animate({opacity: 1.0}, 50);
+			    }, function() {
+			        $(this).animate({opacity: 0.1}, 50);
+			    });
+    	},
+    	postFixed: function() { $("li").css("opacity", 1);}
+    });
+
 	});
 </script>
 
@@ -30,7 +43,7 @@
 	<header>
 			<div class="title">Justin Hartman</div>
 
-			<div class="menu">
+			<div class="menu" id="imgDemo">
 			     <ul id = "nav">
 			         <li><a href="#about">About</a></li>
 			         <li><a href="#portfolio">Portfolio</a></li>
@@ -46,6 +59,7 @@
 	<div id="page2">
 	  <a id="portfolio" class="smooth"></a>
 	    Founder of Big Seat Studios and lead programmer of the game Chicken Hero.
+	    <a href="./web/CollegeResume.pdf" target="_blank">View my resume here:</a>
 	    <a href="http://www.bigseatstudios.com/" target="_blank"> 
 	    <img src="images/ChickenPhil1.gif" alt="Chicken Hero" style="width:480px; height:480px;">
 	    </a>

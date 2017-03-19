@@ -28,12 +28,8 @@ li {
 	display: inline;
 	width: 100%;
 	text-align: center;
-	border-left: 1px solid white;
-	border-right: 1px solid white;
-
-}
-li a {
-	
+	border-left: 1px solid #FFF;
+	border-right: 1px solid #FFF;
 }
 ul {
 	display: inline;
@@ -51,33 +47,13 @@ ul {
 	overflow: auto;
 }
 
-#page1 {
+#page1, #page2, #page3 {
 	height: 1000px;
 	margin-left: auto;
 	margin-right: auto; 
 	width: 60%;
 	text-align: center;
 	padding-top: 15%;
-	color: white;
-	font-size: 3rem;
-}
-#page2 {
-	height: 1000px;
-	margin-left: auto;
-	margin-right: auto; 
-	width: 60%;
-	text-align: center;
-	padding-top: 15%;
-	color: white;
-	font-size: 3rem;
-}
-#page3 {
-	height: 1000px;
-	margin-left: auto;
-	margin-right: auto; 
-	width: 60%;
-	text-align: center;
-	padding-top: 45%;
 	color: white;
 	font-size: 3rem;
 }
@@ -97,7 +73,7 @@ form input {
 }
 body{
 	height: 4500px;
-	background: -webkit-linear-gradient(#59B2AB, #FF681F);
+	background: -webkit-linear-gradient(#002169, #FF681F);
 }
 		
 
