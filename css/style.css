@@ -64,11 +64,17 @@ ul {
 
 #page2 {
 	height: 1400px;
+	padding-bottom: 200px;
 }
 
 #page3 {
 	height: 800px;
 }
+
+#resume:hover {
+	color: black;
+}
+
 form {
 	align: center;
 	padding: 5px;
