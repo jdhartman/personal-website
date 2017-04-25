@@ -48,7 +48,6 @@ ul {
 }
 
 #page1, #page2, #page3 {
-	height: 1000px;
 	margin-left: auto;
 	margin-right: auto; 
 	width: 60%;
@@ -56,6 +55,19 @@ ul {
 	padding-top: 15%;
 	color: white;
 	font-size: 3rem;
+}
+
+
+#page1 {
+	height: 600px;
+}
+
+#page2 {
+	height: 1400px;
+}
+
+#page3 {
+	height: 800px;
 }
 form {
 	align: center;
@@ -72,8 +84,8 @@ form input {
 	color: white;
 }
 body{
-	height: 4500px;
-	background: -webkit-linear-gradient(#002169, #FF681F);
+	height: 100%;
+	background: -webkit-linear-gradient(#FF4935, #6FCCBB);
 }
 		
 
