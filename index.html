@@ -25,15 +25,15 @@
     $('.menu').scrollToFixed({
     	marginTop: 30,
     	preFixed: function() { 
-			    $("li").css("opacity", .1);
+			    $(".menu li").css("opacity", 0.1);
 
-			    $("li").hover(function() {
+			    $(".menu li").hover(function() {
 			        $(this).animate({opacity: 1.0}, 50);
 			    }, function() {
 			        $(this).animate({opacity: 0.1}, 50);
 			    });
     	},
-    	postFixed: function() { $("li").css("opacity", 1);}
+    	postFixed: function() { $(".menu li").css("opacity", 1);}
     });
 
 	});
@@ -53,7 +53,7 @@
 	</header>
 	<div id="page1">
 	  <a id="about" class="smooth"></a>
-	    I'm a freshman at Purdue University majoring in Computer Science. I enjoy everything soccer, playing guitar, and being mediocre at video games.
+	    I'm a sophomore at Purdue University majoring in Computer Science. I enjoy everything soccer, playing guitar, and being mediocre at video games.
 
 	</div>
 
@@ -62,20 +62,46 @@
 	<div id="page2">
 
 	  <a id="portfolio" class="smooth"></a>
-	  	<a href="https://github.com/jdhartman" target="_blank" id="github">
-		<img src="images/GitHub-Mark-Light.png" alt="Github profile">
-		</a>
-	    <p>Founder of Big Seat Studios and lead programmer of the game Chicken Hero. </p>
-	    <a href="./web/CollegeResume.pdf" target="_blank" id="resume">View my resume here:</a>
-	    <a href="http://www.bigseatstudios.com/" target="_blank"> 
-	    <img src="images/ChickenPhil1.gif" alt="Chicken Hero" style="width:480px; height:480px;">
+	  	<br>
+	  	<br>
+	  	<div id=social>
+			<ul>
+				<li><a href="./web/CollegeResume.pdf" target="_blank" id="resume-logo">
+					<img src="images/resume-logo.png" alt="Resume">
+				</a></li>
+
+				<li><a href="https://github.com/jdhartman" target="_blank" id="github">
+					<img src="images/GitHub-Mark-Light.png" alt="Github profile">
+				</a></li>
+
+				<li><a href="https://www.linkedin.com/in/justindhartman/" target="_blank" id="linkedin">
+					<img src="images/linkedin-logo.png" alt="Linkedin profile">
+				</a></li>
+			</ul>
+		</div>
+	    Co-founder of 
+	    <br>
+	    <a href="http://trofi.io/" target="_blank" id="trofi"> 
+	    	<img src="images/trofi-logo.png">
 	    </a>
 	    <br>
-	    Currently working on Eat Out, a cross-platform mobile app that finds a restaurant to meet the needs of a group.
-	    <img src="images/EAT OUT LOGO RED-1.png">
+	    Currently working on 
+	    <br> 
+	    <a href="http://eatout.trofi.io/" target="_blank" id="eatout"> 
+	    	<img src="images/EAT OUT LOGO RED-1.png">
+	    </a>
+	    <br>
+	    a cross-platform mobile app that finds a restaurant to meet the needs of a group.
+	    <br>
+	    <p>Lead programmer of the game Chicken Hero, available on PC, Mac, and iOS. </p>
+	    <a href="https://big-seat-studios.itch.io/chicken-hero" target="_blank"> 
+	    <img src="images/ChickenPhil1.gif" alt="Chicken Hero" style="width:480px; height:480px;">
+	    </a>
+	    <br><br>
 	</div>
 	 
 	<div id="page3">
+		<br><br>
 	  <a id="contact" class="smooth"></a>
 	    Contact me at: <br>
 	    justindhartman@outlook.com

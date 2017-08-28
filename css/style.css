@@ -24,14 +24,14 @@ a {
 	padding-left: 0px;
 	margin: 0;
 }
-li {
+.menu li {
 	display: inline;
 	width: 100%;
 	text-align: center;
 	border-left: 1px solid #FFF;
 	border-right: 1px solid #FFF;
 }
-ul {
+.menu ul {
 	display: inline;
 	list-style-type: none;
 	top: 0px;
@@ -74,6 +74,36 @@ ul {
 #resume:hover {
 	color: black;
 }
+
+
+#social {
+	text-decoration: none;
+	width: 90%;
+	margin: 0 auto;
+	padding-right: 52px;
+}
+
+#social img {
+	width: 10.5vw;
+}
+
+#social ul {
+	text-align: center;
+}
+#social li {
+	display: inline-block;
+}
+
+#trofi img {
+	width: 14.5vw;
+}
+
+#eatout img {
+	margin-left: 2%;
+	width: 20vw;
+}
+
+
 
 form {
 	align: center;
