@@ -10,34 +10,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src=http://bigspotteddog.github.io/ScrollToFixed/jquery-scrolltofixed-min.js></script>
 
-<script>
-	$(document).on('click', 'a', function(event){
-
-	    $('html, body').animate({
-	        scrollTop: $( $.attr(this, 'href') ).offset().top
-	    }, 1000);
-	    return false;
-	});
-</script>
-
-<script>
-	$(document).ready(function() {
-    $('.menu').scrollToFixed({
-    	marginTop: 30,
-    	preFixed: function() { 
-			    $(".menu li").css("opacity", 0.1);
-
-			    $(".menu li").hover(function() {
-			        $(this).animate({opacity: 1.0}, 50);
-			    }, function() {
-			        $(this).animate({opacity: 0.1}, 50);
-			    });
-    	},
-    	postFixed: function() { $(".menu li").css("opacity", 1);}
-    });
-
-	});
-</script>
+<script type="text/javascript" src="js/scroll.js"></script>
 
 <body> 
 	<header>
@@ -79,24 +52,31 @@
 				</a></li>
 			</ul>
 		</div>
+
 	    Co-founder of 
 	    <br>
+
 	    <a href="http://trofi.io/" target="_blank" id="trofi"> 
 	    	<img src="images/trofi-logo.png">
 	    </a>
+
 	    <br>
 	    Currently working on 
 	    <br> 
+
 	    <a href="http://eatout.trofi.io/" target="_blank" id="eatout"> 
 	    	<img src="images/EAT OUT LOGO RED-1.png">
 	    </a>
+
 	    <br>
 	    a cross-platform mobile app that finds a restaurant to meet the needs of a group.
 	    <br>
 	    <p>Lead programmer of the game Chicken Hero, available on PC, Mac, and iOS. </p>
-	    <a href="https://big-seat-studios.itch.io/chicken-hero" target="_blank"> 
-	    <img src="images/ChickenPhil1.gif" alt="Chicken Hero" style="width:480px; height:480px;">
-	    </a>
+
+		    <a href="https://big-seat-studios.itch.io/chicken-hero" target="_blank"> 
+		    	<canvas id="canvas"></canvas>
+		    	<script type="text/javascript" src="js/ch-demo.js"></script>
+		    </a>
 	    <br><br>
 	</div>
 	 
