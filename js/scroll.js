@@ -36,24 +36,70 @@ $(document).ready(function() {
 	    });
 	});
 
-	var pageIds = ["#page1", "#projects", "#games"];
+	$( window ).resize(function() {
+
+		var pageIds = ["#page1", "#projects", "#games", "#contact-text"];
+		var pages = [];
+		for(var i = 0; i < pageIds.length; i++) {
+			var newPage = {};
+			newPage["name"] = pageIds[i];
+			newPage["top"] = $(pageIds[i]).offset().top - 500;
+			newPage["bottom"] = newPage["top"] + $(pageIds[i]).outerHeight();
+			if(window.width > 1024) {
+				$(pageIds[i]).css({"opacity": 0});
+			}
+			else {
+				$(pageIds[i]).css({"opacity": 1});
+			}
+			pages.push(newPage);
+			console.log(pages[i]["name"], pages[i]);
+		}
+		if(window.width < 1800) {
+			$(pageIds[3]).css({"opacity": 1});
+		}
+		console.log(window.width);
+	  	if(window.width < 1024) {
+			for(var i = 0; i < pageIds.length; i++) {
+				$(pageIds[i]).css({"opacity": 1});
+			}
+		}
+		if(window.width < 1800) {
+			$(pageIds[3]).css({"opacity": 1});
+		}
+	});
+
+	var pageIds = ["#page1", "#projects", "#games", "#contact-text"];
 	var pages = [];
 	for(var i = 0; i < pageIds.length; i++) {
 		var newPage = {};
 		newPage["name"] = pageIds[i];
 		newPage["top"] = $(pageIds[i]).offset().top - 500;
 		newPage["bottom"] = newPage["top"] + $(pageIds[i]).outerHeight();
-		$(pageIds[i]).css({"opacity": 0});
+		if(window.width > 1024) {
+			$(pageIds[i]).css({"opacity": 0});
+		}
+		else {
+			$(pageIds[i]).css({"opacity": 1});
+		}
 		pages.push(newPage);
+		console.log(pages[i]["name"], pages[i]);
+	}
+	if(window.width < 1800) {
+		$(pageIds[3]).css({"opacity": 1});
 	}
 
 	var pageNumber = -1;
 
 	function testScroll(ev){
+		if(window.width < 1024) {
+			return;
+		}
 		if(window.pageYOffset < pages[0]["top"] && pageNumber > -1) {
 			pageNumber = -1;
 			for(var i = 0; i < pageIds.length; i++) {
-				$(pageIds[i]).animate({opacity: 0});
+				if(i !== 3 || window.width > 1800) {
+					$(pageIds[i]).animate({opacity: 0});
+				}
 			}
 		}
 
@@ -62,7 +108,9 @@ $(document).ready(function() {
 			if(window.pageYOffset > pages[i]["top"] 
 			&& window.pageYOffset < pages[i]["bottom"]
 			&& pageNumber !== i) {
-				$(pageIds[pageNumber]).animate({opacity: 0}, 1000, "swing")
+				if(pageNumber !== 3 || window.width > 1800) {
+					$(pageIds[pageNumber]).animate({opacity: 0}, 1000, "swing")
+				}
 				pageNumber = i;
 				console.log(pages[i]["name"], pages[i]);
 				$(pageIds[i]).animate({opacity: 1}, 1000, "swing")
@@ -71,5 +119,7 @@ $(document).ready(function() {
 			}
 		}
 	}
+
+
 	window.onscroll=testScroll
 })

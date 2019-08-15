@@ -60,10 +60,13 @@ a {
 	height: 600px;
 }
 
-#page1 img {
-	width: 300px;
+
+#portrait {
+	min-width: 300px;
+	width: 16.5vw;
 	float: left;
 	margin-top: 5%;
+	max-width: 1000px;
 }
 
 #page1 h6 {
@@ -84,6 +87,7 @@ a {
 	height: 700px;
 	width: 100%;
 	text-align: center;
+	padding-bottom: 20%;
 }
 
 #resume:hover {
@@ -99,6 +103,7 @@ a {
 
 #social img {
 	width: 6.5vw;
+	max-width: 120px;
 }
 
 #social ul {
@@ -110,11 +115,11 @@ a {
 
 #eatout img, #quack img {
 	float: left;
-	width: 300px;
+	width: 300px; 
 }
 
 #quack img {
-	margin-top: 5%;
+	margin-top: 3%;
 }
 
 #eatout h5, #quack h5 {
@@ -166,10 +171,14 @@ a {
 	padding-top: 160px;
 }
 
+
+
 #nort img {
 	width: 90%;
 	margin-right: 4%;
-	padding-top: 220px;
+	margin-top: 25%;
+	padding-top: 50px;
+	max-width: 500px;
 }
 
 canvas {
@@ -183,13 +192,23 @@ canvas {
 	/*background: white;*/
 }
 
-@media (max-width: 1000px) { /* when the width is less than 30em, make both of the widths 100% */
+@media(max-width: 1500px) {
+	#nort p {
+		font-size: 1vw;
+	}
+}
+
+@media (max-width: 1024px) { /* when the width is less than 30em, make both of the widths 100% */
 
 	#eatout img, #quack img {
 		float: none;
 		text-align: center;
 		margin-left: 25%;
 		width: 50%;
+	}
+
+	#nort p {
+		font-size: 2.2vw;
 	}
 	
 	#eatout h5, #quack h5, #eatout h6, #quack h6 {
@@ -216,7 +235,11 @@ canvas {
 	}
 
 	#page2 {
-		padding-top: 350px;
+		padding-top: 450px;
+		height: 3300px;
+	}
+	#page3 {
+		height: 500px;
 	}
 
 	#page2 h1 {
