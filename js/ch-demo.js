@@ -72,11 +72,7 @@ function sprite (options) {
 		    that.width / numberOfFrames,
             that.height);
         
-        //console.log(obstacles);
         that.context.fillStyle = "red";
-        //that.context.fillRect(window.width * .2 - 148, window.width * .2 + 100 , obstacles[0].width, obstacles[0].height );
-
-        //that.context.fillRect(window.width * .38, window.width * .2 + 152, obstacles[1].width - 45, obstacles[1].height  );
 
         if(!player.isPressed) {
             that.context.font = '15px Quicksand';
@@ -209,6 +205,9 @@ function update(){
 function rightCollision() {
     //window.width * .38, 238, obstacles[1].width - 45, obstacles[1].height 
     //window.width * .2 - 148, 180, obstacles[0].width, obstacles[0].height
+    if(window.width < 1024) {
+        return false;
+    }
     if(
         player.y + player.height > window.width * .2 + 152 &&
         player.x + player.width > window.width * .38 &&
@@ -233,6 +232,9 @@ function rightCollision() {
 }
 
 function leftCollision() {
+    if(window.width < 1024) {
+        return false;
+    }
     if(
         player.y + player.height > window.width * .2 + 152 &&
         player.x + player.width > window.width * .38 &&
@@ -258,6 +260,9 @@ function leftCollision() {
 }
 
 function bottomCollision() {
+    if(window.width < 1024) {
+        return false;
+    }
     if(
         player.y + player.height > window.width * .2 + 144 && 
         player.x < window.width * .38 + obstacles[1].width - 45 &&
