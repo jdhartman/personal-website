@@ -2,18 +2,15 @@
 @font-face
 {
 font-family: AvenirHand;
-src: url('AvenirHand.ttf'),
-url('AvenirHand.eot'),
-url('AvenirHand.woff');
-
+src: url('https://fonts.googleapis.com/css?family=Quicksand:300&display=swap')
 }
 *{
-	font-family: AvenirHand, Times;
+	font-family: 'Quicksand', sans-serif;
 }
 a {
-	text-decoration: none;
 	color: white;
 }
+
 .title{
 	height: 300px;
 	width: 100%;
@@ -26,10 +23,12 @@ a {
 }
 .menu li {
 	display: inline;
-	width: 100%;
 	text-align: center;
 	border-left: 1px solid #FFF;
 	border-right: 1px solid #FFF;
+}
+.menu a {
+	text-decoration: none;
 }
 .menu ul {
 	display: inline;
@@ -50,8 +49,7 @@ a {
 #page1, #page2, #page3 {
 	margin-left: auto;
 	margin-right: auto; 
-	width: 60%;
-	text-align: center;
+	width: 80%;
 	padding-top: 15%;
 	color: white;
 	font-size: 3rem;
@@ -62,23 +60,39 @@ a {
 	height: 600px;
 }
 
+#page1 img {
+	width: 300px;
+	float: left;
+	margin-top: 5%;
+}
+
+#page1 h6 {
+	width: 65%;
+	margin-left: 35%;
+}
+
 #page2 {
-	height: 1400px;
-	padding-bottom: 200px;
+	height: 1800px;
+	padding-top: 13%;
+}
+
+#projects h3 {
+	text-align: center;
 }
 
 #page3 {
-	height: 800px;
+	height: 700px;
+	width: 100%;
+	text-align: center;
 }
 
 #resume:hover {
 	color: black;
 }
 
-
 #social {
 	text-decoration: none;
-	width: 90%;
+	width: 70%;
 	margin: 0 auto;
 	padding-right: 52px;
 }
@@ -94,29 +108,161 @@ a {
 	display: inline-block;
 }
 
-#trofi img {
-	width: 14.5vw;
+#eatout img, #quack img {
+	float: left;
+	width: 300px;
 }
 
-#eatout img {
-	margin-left: 2%;
-	width: 20vw;
+#quack img {
+	margin-top: 5%;
+}
+
+#eatout h5, #quack h5 {
+	width: 70%;
+	margin-left: 30%;
+	font-size: 1.4rem;
+}
+
+#eatout h6, #quack h6 {
+	width: 80%;
+	margin-left: 30%;
+	font-size: 1.4rem;
+}
+
+#games {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+#game-list {
+    width: 100%;
+	height: 600px;
+	font-size: 1rem;
+	text-align: center;
+	margin-left: .5%;
+}
+
+#game-list div {
+	width: 33%;
+	height: 380px;
+    /*outline: 1px solid;*/
+	float: left;
+	position: relative;
+}
+#game-list div p{
+	width: 95%;
+	margin-left: 2.5%;
+	position: absolute;
+}
+
+#ch-demo p {
+	position: absolute;
+	width: 30%;
+	z-index: -1;
+}
+
+#yard-yarn img {
+	padding-top: 160px;
+}
+
+#nort img {
+	width: 90%;
+	margin-right: 4%;
+	padding-top: 220px;
 }
 
 canvas {
-	display : block;
-    margin: auto;
-    position: absolute;
-    margin-top: -15%;
-    left: 0;
-    right: 0;
-
+	position: absolute;
+	width: 90%;
+	margin-left: -45%;
+	margin-top: -12%;
+	height: 500px;
+	float: left;
+	z-index: 40;
+	/*background: white;*/
 }
 
+@media (max-width: 1000px) { /* when the width is less than 30em, make both of the widths 100% */
 
+	#eatout img, #quack img {
+		float: none;
+		text-align: center;
+		margin-left: 25%;
+		width: 50%;
+	}
+	
+	#eatout h5, #quack h5, #eatout h6, #quack h6 {
+		margin-left: 10%;
+		width: 80%;
+		font-size: 1.6rem;
+		text-align: center;
+	}
+
+	#game-list {
+		margin: 0;
+		text-align: center;
+		font-size: 2.2vw;
+	}
+
+	#game-list div {
+		float: center;
+		width: 100%;
+	}
+
+	#page1 img {
+		width: 40%;
+		margin-left: 30%;
+	}
+
+	#page2 {
+		padding-top: 350px;
+	}
+
+	#page2 h1 {
+		text-align: center;
+	}
+
+	#social img {
+		width: 6.5vw;
+		min-width: 60px;
+	}
+
+	#page1 h6{
+		padding-top: 55%;
+		width: 90%;
+		text-align: center;
+		margin-left: 5%;
+	}
+
+	#page1 {
+		height: 800px;
+		width: 100%;
+	}
+
+	#game-list img {
+		width: 50%;
+		padding-top: 160px;
+		margin-top: 20px;
+		max-width: 300px;
+		float: none;
+	}
+
+	#nort img {
+		margin-left: 4%;
+	}
+
+	canvas {
+		width: 90%;
+		margin-left: -45%;
+		margin-top: 72%;
+		height: 500px;
+		z-index: 40;
+		/*background: white;*/
+	}
+}
 
 form {
-	align: center;
 	padding: 5px;
 	margin: auto;
 	display: inline-block;
@@ -131,7 +277,7 @@ form input {
 }
 body{
 	height: 100%;
-	background: -webkit-linear-gradient(#FF4935, #6FCCBB);
+	background: -webkit-linear-gradient(#55868C, #7F636E );
 }
 		
 

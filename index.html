@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300&display=swap" rel="stylesheet">
 	<title>Justin Hartman</title>
 	
 	 <link href="css/style.css" rel="stylesheet">
@@ -19,72 +20,145 @@
 			<div class="menu" id="imgDemo">
 			     <ul id = "nav">
 			         <li><a href="#about">About</a></li>
-			         <li><a href="#portfolio">Portfolio</a></li>
+			         <li><a href="#portfolio">Projects</a></li>
 			         <li><a href="#contact">Contact</a></li>
 			     </ul>
 			</div>
 	</header>
 	<div id="page1">
-	  <a id="about" class="smooth"></a>
-	    I'm a sophomore at Purdue University majoring in Computer Science. I enjoy everything soccer, playing guitar, and being mediocre at video games.
-
+		 <a id="about" class="smooth"></a>
+		 <div>
+			<img src="images/portrait.jpg" alt="portrait">
+			<h6>
+				I'm a senior in computer science at Purdue University.  
+				I enjoy everything soccer, playing guitar, and being mediocre at video games.
+				<br>
+				<br>
+				This past summer, I had the opportunity to work with <a href="https://www.pfl.com">PFL.com</a>
+				as part of the <a href="https://techpoint.org/xtern/">Xtern</a> program in Indianapolis.  My role 
+				as an intern consisted of designing and completing an internal tool for the use of the software
+				team.  I utilized .NET Core along with Azure Service Bus, Azure Functions, and MongoDB to build
+				my summer project.
+				<br>
+				<br>
+				I'm currently looking for a full-time job as a software developer.
+				<div id=social>
+					<ul>
+						<li><a href="./web/CollegeResume.pdf" target="_blank" id="resume-logo">
+							<img src="images/resume-logo.png" alt="Resume">
+						</a></li>
+		
+						<li><a href="https://github.com/jdhartman" target="_blank" id="github">
+							<img src="images/GitHub-Mark-Light.png" alt="Github profile">
+						</a></li>
+		
+						<li><a href="https://www.linkedin.com/in/justindhartman/" target="_blank" id="linkedin">
+							<img src="images/linkedin-logo.png" alt="LinkedIn profile">
+						</a></li>
+					</ul>
+				</div>
+			</h6>
+		 </div>
 	</div>
-
-	
 	 
 	<div id="page2">
-
 	  <a id="portfolio" class="smooth"></a>
-	  	<br>
-	  	<br>
-	  	<div id=social>
-			<ul>
-				<li><a href="./web/CollegeResume.pdf" target="_blank" id="resume-logo">
-					<img src="images/resume-logo.png" alt="Resume">
-				</a></li>
 
-				<li><a href="https://github.com/jdhartman" target="_blank" id="github">
-					<img src="images/GitHub-Mark-Light.png" alt="Github profile">
-				</a></li>
-
-				<li><a href="https://www.linkedin.com/in/justindhartman/" target="_blank" id="linkedin">
-					<img src="images/linkedin-logo.png" alt="Linkedin profile">
-				</a></li>
-			</ul>
+		<div id="projects">
+			<h3>Projects</h3>
+			<div id="quack">
+				<a href="https://github.com/MagnusFrater/Quack" target="_blank"> 
+					<img src="images/quack-logo-green.png" alt="quack-logo">
+				</a>
+				
+				<h5>
+					Quack is a web/mobile application a team and I developed for a software engineering course in 2018.
+					The goal of the project was to create a modern way of take attendance and quizzes in class.
+					We accomplished this by creating a web application for teachers to create classes
+					and quizzes along with a mobile application for students to enroll and take attendance in class.
+					We used React and React Native for the frontend of our applications along with a Node.js server 
+					connected to an SQL database with Apollo/GraphQL for our backend.
+				</h5>
+				<h6>
+					Languages used: HTML, CSS, JavaScript
+					<br>
+					Technologies/Frameworks used: Node.js, React, React Native, GraphQL
+				</h6>
+			</div>
+			<br>
+			
+			<div id="eatout">
+				<a href="https://play.google.com/store/apps/details?id=io.trofi.eatout&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank"> 
+					<img src="images/EAT OUT LOGO RED-1.png" alt="eatout-logo">
+				</a>
+				
+				<h5>
+					Eat Out is a cross-platform mobile app that my friends and I made in the summer of 2017.
+					It allows a group of people to find restaurants based on everyone's food preferences 
+					and hold a vote on where to eat. Once a restaurant has been picked, the app shows directions, 
+					estimated travel time, and a link to their Yelp page.
+				</h5>
+				<h6>
+					Languages used: Swift, Java
+					<br>
+					Technologies used: Firebase, Android Studio, Xcode
+				</h6>
+			</div>
 		</div>
-
-	    Co-founder of 
-	    <br>
-
-	    <a href="http://trofi.io/" target="_blank" id="trofi"> 
-	    	<img src="images/trofi-logo.png">
-	    </a>
-
-	    <br>
-	    Currently working on 
-	    <br> 
-
-	    <a href="http://eatout.trofi.io/" target="_blank" id="eatout"> 
-	    	<img src="images/EAT OUT LOGO RED-1.png">
-	    </a>
-
-	    <br>
-	    a cross-platform mobile app that finds a restaurant to meet the needs of a group.
-	    <br>
-	    <p>Lead programmer of the game Chicken Hero, available on PC, Mac, and iOS. </p>
-	    <br>
-		    <a href="https://big-seat-studios.itch.io/chicken-hero" target="_blank"> 
-		    	<canvas id="canvas"></canvas>
-		    	<script type="text/javascript" src="js/ch-demo.js"></script>
-		    </a>
-	    <br><br>
+		
+		<br>
+		
+		<div id="games">
+			<h3 id="game-header">Games</h3>
+			<h6>In my free time, I like to make video games as a creative outlet while also refining my programming skills.</h6>
+			<div id="game-list">
+				<a href="https://big-seat-studios.itch.io/chicken-hero" target="_blank"> 
+					<canvas id="ch-canvas"></canvas>
+					<script type="text/javascript" src="js/ch-demo.js"></script>
+				</a>
+				<div id="yard-yarn">
+					Coming soon: Yard Yarn.
+					<br>
+					<p>
+						Yard Yarn is a mobile game I'm currently working on. Playing as a yarn ball, 
+						run around the forever looping backyard as you evade various obstacles. Yard Yarn is being
+						made with C# in Unity. I'm using Blender for 3D model creation.
+					</p>
+					<img src="images/yardyarndemo1.gif">
+				</div>
+				<div id="nort">
+					<p>
+						<a href=https://nortapp.herokuapp.com target="_blank">Nort</a> is a web-based multiplayer game that I worked on for a computer systems class. Inspired
+						by Tron, players can create/join games and fight to be the last one standing. The gameplay was created with vanilla JS 
+						along with Phaser.io for multiplayer functionality. Leaderboards and game lobbies are hosted with Firebase.
+					</p>
+					<a href=https://nortapp.herokuapp.com>
+						<img src="images/NORT.png" alt="nort-logo">
+					</a>
+				</div>
+				<div id="ch-demo">
+						<p>
+							<a href="https://big-seat-studios.itch.io/chicken-hero" target="_blank">Chicken Hero</a>
+							was my first experience programming and my first attempt at making a video game.
+							My friend and I ran a successful 
+							<a href= "https://www.kickstarter.com/projects/1787730886/chicken-hero-a-quirky-pixel-platformer?ref=nav_search&result=project&term=chicken%20hero"
+									target="_blank">Kickstarter</a> for the game as well as showing it of at Indy PopCon.
+							<br>
+							Chicken Hero was made with the GMS using the in-engine programming language.
+						</p>
+				</div>
+			</div>
+			
+		</div>
 	</div>
 	 
 	<div id="page3">
 		<br><br>
 	  <a id="contact" class="smooth"></a>
-	    Contact me at: <br>
-	    justindhartman@outlook.com
+	  <h5>
+			Contact me at: <br>
+			justindhartman@outlook.com
+	  </h5>
 	</div>
 </body>
 </html>
