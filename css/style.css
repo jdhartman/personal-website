@@ -1,17 +1,70 @@
 
 @font-face
 {
-font-family: AvenirHand;
-src: url('https://fonts.googleapis.com/css?family=Quicksand:300&display=swap')
+font-family: Quicksand;
+src: url('Quicksand-Light.ttf')
 }
-*{
+* {
 	font-family: 'Quicksand', sans-serif;
 }
+
 a {
 	color: white;
 }
 
-.title{
+.photo-nav {
+	color: black;
+	cursor: pointer;
+	font-size: 1.2rem;
+	padding: 10px;
+}
+
+.photo-collection {
+	width: 100%;
+	text-align: center;
+}
+
+.photo-image {
+	width: auto;
+	height: 80vh;
+	margin: auto;
+}
+
+#photo-arrows {
+	width: 50%;
+	display: flex;
+	margin: auto;
+	text-align: center;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  padding: 16px;
+  color:black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.prev {
+	text-align: left;
+	margin: auto;
+}
+
+.current {
+	text-align: center;
+	margin: auto;
+}
+
+.next {
+	text-align: right;
+	margin: auto;
+}
+
+.title {
 	height: 380px;
 	width: 100%;
 	text-align: center;
@@ -21,9 +74,21 @@ a {
 	padding-left: 0px;
 	margin: 0;
 }
+
+#photo-title {
+	width: 100%;
+	text-align: center;
+	margin: auto;
+}
+
+#photo-title a {
+	color: black;
+	font-size: 2rem;
+	text-decoration: none;
+}
+
 #description {
 	position: absolute;
-	top: 500px;
 	text-align: center;
 	width: 100%;
 	color: white;
@@ -33,17 +98,40 @@ a {
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
 }
-.menu li {
+
+#navbar {
+	overflow: hidden;
+}
+
+#navbar a {
+	float: right;
 	display: inline;
 	text-align: center;
-	border-left: 1px solid #FFF;
-	border-right: 1px solid #FFF;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
 }
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	text-align: center;
+}
+  
+.sticky + body {
+	padding-top: 60px;
+}
+
+.menu li {
+	text-align: center;
+}
+
 .menu a {
 	text-decoration: none;
 }
+
 .menu ul {
-	display: inline;
 	list-style-type: none;
 	top: 0px;
 }
@@ -210,6 +298,15 @@ canvas {
 	background:none !important;
 }
 
+#main {
+	background: -webkit-linear-gradient(#55868C, #7F636E );
+}
+
+body {
+	height: 100%;
+	padding-top: 16px;
+}
+
 @media(max-width: 1500px) {
 	#nort p {
 		font-size: 1vw;
@@ -313,26 +410,21 @@ canvas {
 }
 @keyframes example {
 	0%   {
-		top: 550px;
+		top: 50px;
 		opacity: 0;
 	}
 	25%  {
-		top: 450px;
+		top: 0px;
 		opacity: 1;
 	}
 	75%  {
-		top: 450px;
+		top: 0px;
 		opacity: 1;
 	}
 	100% {
-		top: 350px;
+		top: -100px;
 		opacity: 0;
 	}
-}
-
-body{
-	height: 100%;
-	background: -webkit-linear-gradient(#55868C, #7F636E );
 }
 		
 
