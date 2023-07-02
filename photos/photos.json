@@ -1,0 +1,50 @@
+[
+{
+    "name": "Santa Monica",
+    "folder": "santa_monica",
+    "photos": [
+        {
+            "description": "Santa Monica Pier. June 2021. Cinestill 800t on Canon AE-1."
+        },
+        {
+            "description": "Santa Monica Pier. June 2021. Cinestill 800t on Canon AE-1."
+        },
+        {
+            "description": "Santa Monica Pier. June 2021. Cinestill 800t on Canon AE-1."
+        },
+        {
+            "description": "Santa Monica Pier. June 2021. Cinestill 800t on Canon AE-1."
+        },
+        {
+            "description": "Santa Monica Pier. June 2021. Cinestill 800t on Canon AE-1."
+        },
+        {
+            "description": "Santa Monica Pier. June 2021. Cinestill 800t on Canon AE-1."
+        }
+    ]
+},
+{
+    "name": "Yosemite",
+    "folder": "yosemite",
+    "photos": [
+        {
+            "description": "Yosemite National Park. June 2021. Cinestill 800t on Canon AE-1."
+        },
+        {
+            "description": "Yosemite National Park. June 2021. Cinestill 800t on Canon AE-1."
+        },
+        {
+            "description": "Yosemite National Park. June 2021. Cinestill 800t on Canon AE-1."
+        },
+        {
+            "description": "Yosemite National Park. June 2021. Cinestill 800t on Canon AE-1."
+        },
+        {
+            "description": "Yosemite National Park. June 2021. Cinestill 800t on Canon AE-1."
+        },
+        {
+            "description": "Yosemite National Park. June 2021. Cinestill 800t on Canon AE-1."
+        }
+    ]
+}
+]
