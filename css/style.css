@@ -12,6 +12,29 @@ a {
 	color: white;
 }
 
+html {
+	overflow-x: hidden;
+}
+
+h2 {
+	font-size: x-large;
+}
+
+h3 {
+	font-size: large;
+}
+
+#nav {
+	display: inline-flex;
+	list-style-type: none;
+	padding: 0;
+}
+
+#photo-menu {
+	width: 100%;
+	text-align: center;
+}
+
 .photo-nav {
 	color: black;
 	cursor: pointer;
@@ -26,7 +49,7 @@ a {
 
 .photo-image {
 	width: auto;
-	height: 80vh;
+	height: 75vh;
 	margin: auto;
 }
 
@@ -72,7 +95,7 @@ a {
 	color: white;
 	padding-top: 15%;
 	padding-left: 0px;
-	margin: 0;
+	margin: auto;
 }
 
 #photo-title {
@@ -93,6 +116,7 @@ a {
 	width: 100%;
 	color: white;
 	font-size: 2.5rem;
+	padding-top: 400px;
 	animation-name: example;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
@@ -101,49 +125,23 @@ a {
 
 #navbar {
 	overflow: hidden;
+	text-align: center;
+	width: 100%;
 }
 
 #navbar a {
-	float: right;
-	display: inline;
+	display: inline-block;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	font-size: 17px;
+	font-size: 1.5rem;
+	overflow: auto;
 }
 
 .sticky {
+	width: 100%;
 	position: fixed;
 	top: 0;
-	width: 100%;
-	text-align: center;
-}
-  
-.sticky + body {
-	padding-top: 60px;
-}
-
-.menu li {
-	text-align: center;
-}
-
-.menu a {
-	text-decoration: none;
-}
-
-.menu ul {
-	list-style-type: none;
-	top: 0px;
-}
-.menu {
-	padding-right: 30px;
-	margin: 0;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	top: 0px;
-	font-size: 2.5rem;
-	overflow: auto;
 }
 
 #page1, #page2, #page3 {
@@ -164,21 +162,27 @@ a {
 	min-width: 300px;
 	width: 16.5vw;
 	float: left;
-	margin-top: 5%;
+	margin-top: 15%;
+	padding-right: 25px;
 	max-width: 1000px;
 }
 
 #page1 h6 {
 	width: 65%;
 	margin-left: 35%;
+	padding-top: 12%;
 }
 
 #page2 {
 	height: 1800px;
-	padding-top: 13%;
+	padding-top: 12%;
 }
 
 #projects h3 {
+	text-align: center;
+}
+
+#projects h2 {
 	text-align: center;
 }
 
@@ -189,18 +193,19 @@ a {
 	padding-bottom: 20%;
 }
 
+
 #resume:hover {
 	color: black;
 }
 
 #social {
 	text-decoration: none;
-	width: 70%;
+	width: 100%;
 	margin: 0 auto;
 	padding-right: 52px;
 }
 
-#social h6 {
+#social h3 {
 	margin-left: 0;
 	width: 100%;
 	font-size: 1vw;
@@ -223,6 +228,7 @@ a {
 #eatout img, #quack img {
 	float: left;
 	width: 300px; 
+	padding-right: 5%;
 }
 
 #quack img {
@@ -262,7 +268,7 @@ a {
 	float: left;
 	position: relative;
 }
-#game-list div p{
+#game-list div p {
 	width: 95%;
 	margin-left: 2.5%;
 	position: absolute;
@@ -304,7 +310,6 @@ canvas {
 
 body {
 	height: 100%;
-	padding-top: 16px;
 }
 
 @media(max-width: 1500px) {
@@ -319,6 +324,8 @@ body {
 		padding-top: 0;
 		height: 500px;
 	}
+
+
 	#eatout img, #quack img {
 		float: none;
 		text-align: center;

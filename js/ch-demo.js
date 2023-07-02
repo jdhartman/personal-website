@@ -6,8 +6,6 @@
 var philImage = new Image();
 philImage.src = "./images/Phil/ChickenSheet.png"
 
-
-
 function sprite (options) {
 				
     var that = {},
@@ -301,7 +299,7 @@ window.addEventListener("load",function(){
     update();
 });
 
-$(window).resize(function(){
+window.onresize = function() {
     canvas.width = document.getElementById("ch-canvas").getBoundingClientRect().width;
     canvas.height = document.getElementById("ch-canvas").getBoundingClientRect().height; 
     ctx = canvas.getContext("2d");
@@ -332,4 +330,4 @@ $(window).resize(function(){
     gravity = 0.2;
     obstacles[0] = document.getElementById("yard-yarn").querySelector("img").getBoundingClientRect();
     obstacles[1] = document.getElementById("nort").querySelector("img").getBoundingClientRect();
-});
+};
