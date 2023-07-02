@@ -3,8 +3,6 @@ $(document).ready(function(){
     var currentCollection = 0;
     const bucketUrl = "https://justinhartman.s3.amazonaws.com/photos/"
 
-    $('.photo-collection').not('#photos1').hide();
-
     getJSON(bucketUrl + 'photos.json',
         function(err, data) {
             if (err !== null) {
@@ -14,9 +12,6 @@ $(document).ready(function(){
             }
         }
     );
-
-    show(0, 0);
-
 
     function show(index, collection) {
         console.log(index, collection);
@@ -61,6 +56,7 @@ $(document).ready(function(){
                 const collection = data[index];
                 createPhotoNav(collection.name, index);
                 createPhotoCards(collection, index)
+                console.log(document.body)
             }
         }
 
@@ -68,12 +64,13 @@ $(document).ready(function(){
     }
 
     function createPhotoNav(name, index) {
+        var offsetIndex = parseInt(index) + 1
         var ul = document.getElementById("nav");
         var li = document.createElement("li");
         var a = document.createElement("a");
         a.textContent = name
-        a.id = "photo-nav-" + index
-        a.setAttribute("value", "photos" + index)
+        a.id = "photo-nav-" + offsetIndex
+        a.setAttribute("value", "photos" + offsetIndex)
         a.setAttribute("class", "photo-nav")
         
         li.appendChild(a);
@@ -89,9 +86,11 @@ $(document).ready(function(){
             <div class="photo-description">Chinatown, San Francisco. June 2021. Kodak Gold 200 on Ilford Sprite 35-II.</div>
         </div>
 */
+        var offsetIndex = parseInt(index) + 1
+
         var photoCollection = document.createElement("div")
         photoCollection.setAttribute("class", "photo-collection")
-        photoCollection.id = "photos" + index
+        photoCollection.id = "photos" + offsetIndex
 
         for (const photoIndex in collection.photos) {
             if (Object.hasOwnProperty.call(collection.photos, photoIndex)) {
@@ -102,23 +101,25 @@ $(document).ready(function(){
             }
         }
 
+        console.log(photoCollection)
         document.body.appendChild(photoCollection)
     }
 
     function createPhotoCard(photo, folder, index, photoIndex) {
+        var offsetIndex = parseInt(photoIndex) + 1
         var card = document.createElement("div")
         card.setAttribute("class", "photo-card")
         card.id = "image-" + index + "-" + photoIndex
 
-        var source = bucketUrl + folder + "/" + photoIndex + ".jpg"
+        var source = bucketUrl + folder + "/" + offsetIndex  + ".jpg"
 
         var a = document.createElement("a")
         a.setAttribute("target", "_blank")
         a.setAttribute("href", source)
-        a.setAttribute("alt", folder + " " + photoIndex)
 
         var img = document.createElement("img")
         img.setAttribute("class", "photo-image")
+        img.setAttribute("alt", folder + " " + offsetIndex)
         img.src = source
 
         a.appendChild(img)
@@ -133,6 +134,9 @@ $(document).ready(function(){
     }
 
     function photosLoaded() {
+        $('.photo-collection').not('#photos1').hide();
+        show(0, 0);
+
         $('.photo-nav').click(function() {
             var inputValue = $(this).attr('value');
             var targetBox = $('#' + inputValue);

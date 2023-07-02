@@ -1,7 +1,7 @@
 [
 {
     "name": "Santa Monica",
-    "folder": "santa_monica",
+    "folder": "samo-07-2021",
     "photos": [
         {
             "description": "Santa Monica Pier. June 2021. Cinestill 800t on Canon AE-1."
@@ -10,22 +10,34 @@
             "description": "Santa Monica Pier. June 2021. Cinestill 800t on Canon AE-1."
         },
         {
-            "description": "Santa Monica Pier. June 2021. Cinestill 800t on Canon AE-1."
+            "description": "Santa Monica Pier. June 2021. Kodak Gold 200 on Ilford Sprite 35-II."
+        },
+        {
+            "description": "Santa Monica Beach. June 2021. Ilford HP5 on Canon AE-1."
+        },
+        {
+            "description": "Santa Monica, California. June 2021. Kodak Ektar 100 on Canon AE-1."
+        },
+        {
+            "description": "Santa Monica, California. June 2021. Kodak Ektar 100 on Canon AE-1."
         },
         {
             "description": "Santa Monica Pier. June 2021. Cinestill 800t on Canon AE-1."
         },
         {
-            "description": "Santa Monica Pier. June 2021. Cinestill 800t on Canon AE-1."
+            "description": "Santa Monica Pier. June 2021. Kodak Gold 200 on Ilford Sprite 35-II."
         },
         {
-            "description": "Santa Monica Pier. June 2021. Cinestill 800t on Canon AE-1."
+            "description": "Santa Monica, California. June 2021. Kodak Gold 200 on Ilford Sprite 35-II."
+        },
+        { 
+            "description": "Santa Monica, California. June 2021. Kodak Gold 200 on Ilford Sprite 35-II."
         }
     ]
 },
 {
     "name": "Yosemite",
-    "folder": "yosemite",
+    "folder": "yosemite-07-2021",
     "photos": [
         {
             "description": "Yosemite National Park. June 2021. Cinestill 800t on Canon AE-1."
@@ -44,6 +56,204 @@
         },
         {
             "description": "Yosemite National Park. June 2021. Cinestill 800t on Canon AE-1."
+        }
+    ]
+},
+{
+    "name": "Portland",
+    "folder": "portland-07-2021",
+    "photos": [
+        {
+            "description": "Portland. July 2021. Ilford HP5 on Canon AE-1."
+        }, 
+        {
+            "description": "Portland. July 2021. Ilford HP5 on Canon AE-1."
+        }, 
+        {
+            "description": "Portland. July 2021. Ilford HP5 on Canon AE-1."
+        }, 
+        {
+            "description": "Portland. July 2021. Ilford HP5 on Canon AE-1."
+        }, 
+        {
+            "description": "Cannon Beach, Oregon. July 2021. Portra 400 on Canon AE-1."
+        }, 
+        {
+            "description": "Cannon Beach, Oregon. July 2021. Portra 400 on Canon AE-1."
+        }, 
+        {
+            "description": "Cannon Beach, Oregon. July 2021. Portra 400 on Canon AE-1."
+        }, 
+        {
+            "description": "Cannon Beach, Oregon. July 2021. Portra 400 on Canon AE-1."
+        }, 
+        {
+            "description": "Cannon Beach, Oregon. July 2021. Portra 400 on Canon AE-1."
+        }, 
+        {
+            "description": "Portland. July 2021. Portra 400 on Canon AE-1."
+        }, 
+        {
+            "description": "Portland. July 2021. Portra 400 on Canon AE-1."
+        }, 
+        {
+            "description": "Portland. July 2021. Portra 400 on Canon AE-1."
+        }
+    ]
+},
+{
+    "name": "San Francisco",
+    "folder": "sf-06-2021",
+    "photos": [
+        { 
+            "description": "Chinatown, San Francisco. June 2021. Kodak Gold 200 on Ilford Sprite 35-II."
+        },
+        { 
+            "description": "Chinatown, San Francisco. June 2021. Kodak Gold 200 on Ilford Sprite 35-II."
+        },
+        { 
+            "description": "Chinatown, San Francisco. June 2021. Kodak Gold 200 on Ilford Sprite 35-II."
+        },
+        { 
+            "description": "Chinatown, San Francisco. June 2021. Kodak Gold 200 on Ilford Sprite 35-II."
+        },
+        { 
+            "description": "Chinatown, San Francisco. June 2021. Kodak Gold 200 on Ilford Sprite 35-II."
+        },
+        { 
+            "description": "Chinatown, San Francisco. June 2021. Kodak Gold 200 on Ilford Sprite 35-II."
+        },
+        { 
+            "description": "Golden Gate Bridge, San Francisco. June 2021. Portra 400 on Canon AE-1."
+        },
+        { 
+            "description": "San Francisco. June 2021. Portra 400 on Canon AE-1."
+        },
+        { 
+            "description": "Ghiradelli Square, San Francisco. July 2021. Portra 400 on Canon AE-1."
+        },
+        { 
+            "description": "Fisherman's Wharf, San Francisco. July 2021. Portra 400 on Canon AE-1."
+        },
+        { 
+            "description": "Alamo Square Park, San Francisco. July 2021. Portra 400 on Canon AE-1."
+        },
+        { 
+            "description": "Alamo Square Park, San Francisco. July 2021. Portra 400 on Canon AE-1."
+        }
+    ]
+},
+{
+    "name": "Utah",
+    "folder": "utah-06-2021",
+    "photos": [
+        {
+            "description": "Zion National Park. June 2021. Ilford HP5 on Canon AE-1." 
+        }, 
+        {
+            "description": "Moab, UT. June 2021. Ilford HP5 on Canon AE-1." 
+        },
+        {
+            "description": "Moab, UT. June 2021. Ilford HP5 on Canon AE-1." 
+        }, 
+        {
+            "description": "Moab, UT. June 2021. Ilford HP5 on Canon AE-1." 
+        }, 
+        {
+            "description": "Moab, UT. June 2021. Ilford HP5 on Canon AE-1." 
+        },
+        {
+            "description": "Moab, UT. June 2021. Ilford HP5 on Canon AE-1." 
+        }, 
+        {
+            "description": "Moab, UT. June 2021. Ilford HP5 on Canon AE-1." 
+        }, 
+        {
+            "description": "Moab, UT. June 2021. Ilford HP5 on Canon AE-1." 
+        }, 
+        {
+            "description": "Moab, UT. June 2021. Ilford HP5 on Canon AE-1." 
+        }, 
+        {
+            "description": "Moab, UT. June 2021. Ilford HP5 on Canon AE-1." 
+        }, 
+        {
+            "description": "Utah. June 2021. Ilford HP5 on Canon AE-1." 
+        }, 
+        {
+            "description": "Utah. June 2021. Ilford HP5 on Canon AE-1." 
+        } 
+    ]
+},
+{
+    "name": "Chicago",
+    "folder": "chicago-07-2021",
+    "photos": [
+        {
+            "description": "Chicago. July 2021. Portra 400 on Canon AE-1."
+        },
+        {
+            "description": "Chicago. July 2021. Cinestill 800t on Canon AE-1."
+        },
+        {
+            "description": "Chicago. July 2021. Cinestill 800t on Canon AE-1."
+        },
+        {
+            "description": "Chicago. July 2021. Cinestill 800t on Canon AE-1."
+        },
+        {
+            "description": "Chicago. July 2021. Cinestill 800t on Canon AE-1."
+        },
+        {
+            "description": "Chicago. July 2021. Cinestill 800t on Canon AE-1."
+        },
+        {
+            "description": "Chicago. July 2021. Portra 400 on Canon AE-1."
+        }
+    ]
+},
+{
+    "name": "Indy",
+    "folder": "indy-09-2021",
+    "photos": [
+        {
+            "description": "Indy. September 2021. Portra 400 on Nikon FM10."
+        },
+        {
+            "description": "Indy. September 2021. Portra 400 on Nikon FM10."
+        },
+        {
+            "description": "Indy. September 2021. Portra 400 on Nikon FM10."
+        },
+        {
+            "description": "Indy. September 2021. Portra 400 on Nikon FM10."
+        },
+        {
+            "description": "Indy. September 2021. Portra 400 on Nikon FM10."
+        },
+        {
+            "description": "Indy. September 2021. Portra 400 on Nikon FM10."
+        },
+        {
+            "description": "Indy. September 2021. Cinestill 800t on Canon AE-1."
+        },
+        {
+            "description": "Indy. September 2021. Cinestill 800t on Canon AE-1."
+        }
+    ]
+},
+{
+    "name": "Greencastle",
+    "folder": "greencastle",
+    "photos": [
+        {
+            "description": "Greencastle, IN. February 2021. Portra 400 on Canon AE-1."
+        },
+        {
+            "description": "Greencastle, IN. February 2021. Portra 400 on Canon AE-1."
+        },
+        {
+            "description": "Greencastle, IN. February 2021. Portra 400 on Canon AE-1."
         }
     ]
 }
