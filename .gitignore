@@ -1,1 +1,6 @@
 /images/photos/*
+/web/resume.aux
+/web/resume.log
+/web/resume.out
+/web/resume.synctex.gz
+.DS_Store
